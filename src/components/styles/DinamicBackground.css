@@ -1,0 +1,194 @@
+.dinamic-background{
+    background-image: url("backgroundImages/weatherBackGround/Night/Cloudy.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+
+.dinamic-background-clear-day {
+    background-image: url("backgroundImages/weatherBackGround/Day/Clear.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+
+.dinamic-background-clear-night {
+    background-image: url("backgroundImages/weatherBackGround/Night/Clear.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+
+.dinamic-background-partlycloudly-day{
+    background-image: url("backgroundImages/weatherBackGround/Day/PartlyCloudly.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+
+.dinamic-background-partlycloudly-night{
+    background-image: url("backgroundImages/weatherBackGround/Night/PartlyCloudly.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+
+.dinamic-background-cloudly-day{
+    background-image: url("backgroundImages/weatherBackGround/Day/Cloudly.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+
+.dinamic-background-cloudly-night{
+    background-image: url("backgroundImages/weatherBackGround/Night/Cloudly.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+
+.dinamic-background-rain-day{
+    background-image: url("backgroundImages/weatherBackGround/Day/Rain.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+
+.dinamic-background-rain-night{
+    background-image: url("backgroundImages/weatherBackGround/Night/Rain.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+
+.dinamic-background-snow-day{
+    background-image: url("backgroundImages/weatherBackGround/Day/Snow.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+
+.dinamic-background-snow-night{
+    background-image: url("backgroundImages/weatherBackGround/Night/Snow.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+
+.dinamic-background-thunderstorm-day{
+    background-image: url("backgroundImages/weatherBackGround/Day/Thunderstorm.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+
+.dinamic-background-thunderstorm-night{
+    background-image: url("backgroundImages/weatherBackGround/Night/Thunderstorm.png");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
