@@ -1,5 +1,6 @@
 import { useState,useEffect, useRef } from "react";
 import autocompleteElement from "../interfaces/autocompleteElement.ts"
+import IsLoadingSugestion from "./IsLoadingSugestion.tsx";
 import "../styles/Autocomplete.css"
 
 
@@ -12,20 +13,24 @@ interface autocompleteProps{
 function Autocomplete({searchValue,setSearchValue,searchRef}:autocompleteProps) {
 
     const [autocomplete, setAutocomplete] = useState <autocompleteElement[]| null> (null);
+    const [isLoadingSugestion, setIsLoadingSugestion] = useState <boolean> (false)
     const autoCompleteUrl: string = "http://api.weatherapi.com/v1/search.json?key=71b564ab7ff5470ab4f182355252003&q="
     const  autocompleteRef = useRef <HTMLDivElement>(null);
+
 
     useEffect(
         ()=>{
             const fetchLocations = async() =>{
                 try{
                     if(searchValue){
+                        setIsLoadingSugestion(true)
                         const result = await fetch(autoCompleteUrl+searchValue)
                         if (!result.ok) {
                             throw new Error(`HTTP error Status: ${result.status}`);
                         }
                         const data = await result.json();
-                        setAutocomplete(data)
+                        setIsLoadingSugestion(false);
+                        setAutocomplete(data);
                     }
                 }
                 catch (error) {
@@ -62,7 +67,13 @@ function Autocomplete({searchValue,setSearchValue,searchRef}:autocompleteProps) 
     }, []);
 
 
- if(autocomplete!=null){
+if(isLoadingSugestion){
+    return(
+        <IsLoadingSugestion/>
+    )
+}
+
+else if(autocomplete!=null){
   
     return (
         <div  ref={autocompleteRef}>

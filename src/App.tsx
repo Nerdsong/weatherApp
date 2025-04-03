@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useRef, useState } from 'react'
 import Header from './components/Header';
 import MainContainer from './components/MainContainer';
-import DinamicBackground from './components/ui/dinamicBackground';
+import DinamicBackground from './components/ui/DinamicBackground';
 import './components/styles/DinamicBackground.css';
 
 
@@ -12,6 +12,29 @@ interface conditionData{
     text: string;
 }
 
+interface hourData {
+    time_epoch: number;
+    condition: conditionData;
+    temp_c: number;
+}
+
+interface astroData {
+    sunrise: string;
+    sunset: string;
+    moonrise: string;
+    moonset: string;
+    moon_phase: string;
+}
+
+interface forecastDay {
+    astro: astroData;
+    hour: hourData[];
+}
+
+interface forecast {
+    forecastday: forecastDay[];
+}
+
 export interface weatherData {
     location: {
         country: string;
@@ -19,6 +42,8 @@ export interface weatherData {
         localtime: string;
         name: string; 
         region: string;
+        localtime_epoch: number;
+        tz_id: string;
     };
     current: {
         cloud: boolean;
@@ -28,6 +53,7 @@ export interface weatherData {
         feelslike_c: number;
         last_updated: string;        
     };
+    forecast: forecast;
 }
 
 export interface backgroundData{

@@ -2,10 +2,11 @@
 .main-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: 100%;
     height: 100vh;
     position: relative;
+    transition: all 1s ease-in-out;
 }
 
 .content{
@@ -16,7 +17,10 @@
     color: white;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
-    width: 40rem;
+    width: 35em;
+    max-width: 90%;
+    position: absolute;
+    top:20%;
 }
 
 .credits{
@@ -30,17 +34,55 @@
 
 
 
-
 .content-top{
     display: flex;
-    justify-content: start;
+    align-items: center;
+    justify-content: space-around;
     margin: 0px 0px 20px;
+}
+
+.local-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.local-time h6{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.local-time h1{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    align-self: center;
 }
 
 .content-top-wrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+}
+
+.content-top-wrapper h1{
+    align-self: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.content-top-wrapper p{
+    align-self: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .content-title{
@@ -51,6 +93,10 @@
 }
 .content-title h6{
     margin: 0px 6px;
+}
+
+.content-top{
+    margin: 10px 0px;
 }
 
 .content-top span{
@@ -69,3 +115,61 @@
 .content-bottom p{
     margin: 0px;
 }
+
+.hourly-element{
+    min-width: 120px;
+    max-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hourly-element-hour{
+    margin-bottom: 10px;
+}
+
+.hourly-element-condition{
+    display: flex;
+    align-items: center;
+}
+
+.hourly-element-condition p {
+    margin: none;
+    font-size: 14px;
+}
+
+.hourly-report{
+    display: flex;
+    margin: 60px 0px;
+    padding: 15px;
+    border: 3px solid rgba(145, 144, 144, 0.466) ;
+    border-radius: 10px;
+    box-sizing: content-box;
+    background: rgba(32, 32, 32, 0.438);
+    justify-content: space-around;
+}
+
+.hourly-report-img{
+    width: 20px;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 55px;
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient(#ffffffdc 0 0);
+    background: 
+      var(--c) 0%   50%,
+      var(--c) 50%  50%,
+      var(--c) 100% 50%;
+    background-size: 20% 100%;
+    animation: l1 1s infinite linear;
+    justify-self: center;
+  }
+  @keyframes l1 {
+    0%  {background-size: 20% 100%,20% 100%,20% 100%}
+    33% {background-size: 20% 10% ,20% 100%,20% 100%}
+    50% {background-size: 20% 100%,20% 10% ,20% 100%}
+    66% {background-size: 20% 100%,20% 100%,20% 10% }
+    100%{background-size: 20% 100%,20% 100%,20% 100%}
+  }
