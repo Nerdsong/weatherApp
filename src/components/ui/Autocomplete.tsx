@@ -14,7 +14,7 @@ function Autocomplete({searchValue,setSearchValue,searchRef}:autocompleteProps) 
 
     const [autocomplete, setAutocomplete] = useState <autocompleteElement[]| null> (null);
     const [isLoadingSugestion, setIsLoadingSugestion] = useState <boolean> (false)
-    const autoCompleteUrl: string = "http://api.weatherapi.com/v1/search.json?key=71b564ab7ff5470ab4f182355252003&q="
+    const autoCompleteUrl: string = "https://api.weatherapi.com/v1/search.json?key=71b564ab7ff5470ab4f182355252003&q="
     const  autocompleteRef = useRef <HTMLDivElement>(null);
 
 
