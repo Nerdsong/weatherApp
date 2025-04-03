@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useRef, useState } from 'react'
+import React, { createContext, useRef, useState } from 'react'
 import Header from './components/Header';
 import MainContainer from './components/MainContainer';
 import DinamicBackground from './components/ui/DinamicBackground';

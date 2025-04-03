@@ -11,7 +11,7 @@ function MainContainer() {
 
     const [searchResult, setSearchsearchResult] = useState <weatherData | null >(null);
     const [isLoading, setIsLoading] = useState <boolean> (false);
-    const [welcomeScreen, setWelcomeScreen] = useState <boolean> (true)
+    //const [welcomeScreen, setWelcomeScreen] = useState <boolean> (true)
 
     
     const consumeContext = useContext(searchContext) 

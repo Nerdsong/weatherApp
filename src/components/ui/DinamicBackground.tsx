@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import  { useContext } from 'react'
 import { searchContext } from '../../App'
-import { backgroundData } from '../../App';
 
 function DinamicBackground() {
 
@@ -10,9 +9,9 @@ function DinamicBackground() {
     }
     const {backgroundCondition} = backgroundContext;
 
-    const clear:number = 1000; 
+    //const clear:number = 1000; 
 
-    const partlyCloudly: number = 1003; 
+    //const partlyCloudly: number = 1003; 
 
     const cloudly: number[] = [1006, 1009, 1030, 1135, 1147];
 
@@ -27,7 +26,7 @@ function DinamicBackground() {
         1222, 1225, 1114, 1117, 1255, 1258
       ];
       
-    const thunderStorm: number[] = [1087, 1273, 1276, 1279, 1282];
+    //const thunderStorm: number[] = [1087, 1273, 1276, 1279, 1282];
 
     const weatherClasses = {
         clear:{

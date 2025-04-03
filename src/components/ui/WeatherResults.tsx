@@ -19,14 +19,14 @@ function WeatherResults({searchResult}: {searchResult: weatherData}) {
 
     }
 
-    const extractDate = (epochNumber: number): string => {
+    /*const extractDate = (epochNumber: number): string => {
         const date:Date = new Date (epochNumber *1000);
         return (date.toLocaleString('en-US',{
             month: "short",
             day: "2-digit",
             dayPeriod: "short"    
         }))
-    }
+    }*/
 
     //this function receives a epoch number and returns an array with the epoch number corresponding to the next 5 hours 
     const calculateFutureHours = (epochNumber: number): number[] =>{
