@@ -3,6 +3,7 @@ import { searchContext, weatherData } from '../App';
 import IsLoading from './ui/IsLoading';
 import './styles/MainContainer.css'
 import WeatherResults from './ui/WeatherResults';
+import WelcomeScreen from './ui/WelcomeScreen';
 
 
 function MainContainer() {
@@ -11,7 +12,7 @@ function MainContainer() {
 
     const [searchResult, setSearchsearchResult] = useState <weatherData | null >(null);
     const [isLoading, setIsLoading] = useState <boolean> (false);
-    //const [welcomeScreen, setWelcomeScreen] = useState <boolean> (true)
+    const [welcomeScreen, setWelcomeScreen] = useState <boolean> (true)
 
     
     const consumeContext = useContext(searchContext) 
@@ -37,6 +38,7 @@ function MainContainer() {
                             console.log("API Response:", data);
                             setSearchsearchResult(data);
                             setIsLoading(false);
+                            setWelcomeScreen(false);
                             setBackgroundCondition({code: data.current.condition.code, isDay: data.current.is_day})
                         }
                     } 
@@ -51,7 +53,8 @@ function MainContainer() {
 
   return (
     <div className='main-container'>
-        {isLoading? <IsLoading/>: searchResult && <WeatherResults searchResult={searchResult}/>}
+        {welcomeScreen? <WelcomeScreen/> : 
+        isLoading? <IsLoading/>: searchResult && <WeatherResults searchResult={searchResult}/>}
         <div className='credits'>
             <a href="https://www.weatherapi.com/" title="Free Weather API"><img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com" /></a>
         </div>

@@ -26,7 +26,7 @@ function DinamicBackground() {
         1222, 1225, 1114, 1117, 1255, 1258
       ];
       
-    //const thunderStorm: number[] = [1087, 1273, 1276, 1279, 1282];
+    const thunderStorm: number[] = [1087, 1273, 1276, 1279, 1282];
 
     const weatherClasses = {
         clear:{
@@ -52,6 +52,9 @@ function DinamicBackground() {
         thunderStorm:{
             day:'dinamic-background-thunderstorm-day',
             night:'dinamic-background-thunderstorm-night'
+        },
+        welcome:{
+            default: "dinamic-background-welcome"
         }
     }
 
@@ -71,8 +74,11 @@ function DinamicBackground() {
         else if(snow.includes(backgroundCondition.code)){
             return backgroundCondition.isDay? weatherClasses.snow.day : weatherClasses.snow.night;
         }
-        else{
+        else if(thunderStorm.includes(backgroundCondition.code)){
             return backgroundCondition.isDay? weatherClasses.thunderStorm.day : weatherClasses.thunderStorm.night;
+        }
+        else{
+            return weatherClasses.welcome.default;
         }
         
     }

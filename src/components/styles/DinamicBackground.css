@@ -192,3 +192,18 @@
     opacity: 0.9;
     transition: all 0.5s ease-in-out;
 }
+
+.dinamic-background-welcome{
+    background-image: url("/backgroundImages/welcome/Welcome-img.jpg");
+    position: fixed; /* or fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
