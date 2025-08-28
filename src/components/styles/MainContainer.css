@@ -173,3 +173,36 @@
     66% {background-size: 20% 100%,20% 100%,20% 10% }
     100%{background-size: 20% 100%,20% 100%,20% 100%}
   }
+
+  /* hasta 480px */
+@media (max-width: 480px) { 
+    .content{
+    border-radius: 10px;
+    padding: 25px 25px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
+    width: 70%;
+    max-width: 70%; 
+    top:10%;
+    }
+    .content-top{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px;
+    }
+
+    .local-time{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    }
+    .hourly-report{
+    overflow-x: auto;              /* permite scroll horizontal */
+    -webkit-overflow-scrolling: touch; /* suaviza scroll en iOS */
+    gap: 15px;                     /* separación entre items */
+    justify-content: flex-start;   /* los items se alinean a la izquierda para scroll */
+    scroll-snap-type: x mandatory;
+    }
+
+}

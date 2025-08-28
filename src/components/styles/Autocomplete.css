@@ -28,3 +28,8 @@
 .autocomplete-list-element:hover{
     background-color: rgba(0, 140, 255, 0.418);
 }
+
+/* hasta 480px */
+@media (max-width: 480px) { 
+  
+}
